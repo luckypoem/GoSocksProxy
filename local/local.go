@@ -13,7 +13,7 @@ func main() {
 	}
 	serverAddr := &net.TCPAddr{
 		IP:   net.ParseIP("0.0.0.0"),
-		Port: 3344,
+		Port: 33440,
 	}
 	localConn := socket.NewSocks(listenAddr, serverAddr, "des", "haohaio!")
 	localConn.Listen()
